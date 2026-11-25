@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Arrow 2 (Underneath, broken shaft) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="
+            M 18,18 L 13.5,13.5 
+            M 10.5,10.5 L 8,8 
+            M 8,8 L 5,9 L 3,3 L 9,5 Z 
+            M 15,15 L 18,21 L 18,18 L 21,18 Z" />
+
+    <!-- Arrow 1 (On top, solid shaft) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="
+            M 6,18 L 16,8 
+            M 16,8 L 15,5 L 21,3 L 19,9 Z 
+            M 9,15 L 3,18 L 6,18 L 6,21 Z" />
+</vector>

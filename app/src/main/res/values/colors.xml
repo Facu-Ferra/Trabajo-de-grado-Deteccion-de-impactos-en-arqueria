@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bounding_box_color">#234567</color>
+    <color name="gray">#999</color>
+    <color name="orange">#F93</color>
+    <color name="menu_bg">#0A0D14</color>
+    <color name="card_blue_start">#1A4FFF</color>
+    <color name="card_blue_end">#5C24FF</color>
+    <color name="card_purple_start">#5C24FF</color>
+    <color name="card_purple_end">#8E1EFF</color>
+    <color name="card_grey_bg">#151B28</color>
+    <color name="card_grey_border">#232B3E</color>
+    <color name="text_sub">#8C96AB</color>
+</resources>

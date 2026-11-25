@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_heatmap_radial">
+
+    <!-- USER SIDE (LEFT) -->
+    <LinearLayout
+        android:id="@+id/layout_user_side"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOU"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+            
+        <TextView
+            android:id="@+id/tv_user_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="?"
+            android:textColor="#FFD700"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+            
+        <LinearLayout
+            android:id="@+id/layout_user_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp" />
+            
+        <TextView
+            android:id="@+id/tv_scan_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="TAP HERE TO\nSCAN TARGET"
+            android:textAlignment="center"
+            android:textColor="#4CAF50"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+            
+        <ImageView
+            android:id="@+id/iv_camera_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:src="@android:drawable/ic_menu_camera"
+            app:tint="#4CAF50" />
+            
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#33FFFFFF" />
+
+    <!-- BOT SIDE (RIGHT) -->
+    <LinearLayout
+        android:id="@+id/layout_bot_side"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        
+        <TextView
+            android:id="@+id/tv_bot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROBIN"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+            
+        <TextView
+            android:id="@+id/tv_bot_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="27"
+            android:textColor="#F44336"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+            
+        <LinearLayout
+            android:id="@+id/layout_bot_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp" />
+            
+    </LinearLayout>
+
+    <!-- Overlay Result (Initially Hidden) -->
+    <FrameLayout
+        android:id="@+id/layout_result_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+            
+            <TextView
+                android:id="@+id/tv_winner_announcement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOU WIN!"
+                android:textColor="#FFD700"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+                
+            <Button
+                android:id="@+id/btn_finish_duel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Finish Match"
+                android:backgroundTint="#5C24FF"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

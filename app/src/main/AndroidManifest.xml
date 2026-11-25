@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YOLOv8TfLite"
+        tools:targetApi="31">
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PoseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActiveSessionActivity"
+            android:exported="false" />
+
+        <activity android:name=".TrainingHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DuelGameModeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AiSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MatchPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DuelResolutionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".HeatmapActivity"
+            android:exported="false" />
+
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false"/>
+        <uses-native-library
+            android:name="libOpenCL-pixel.so"
+            android:required="false" />
+    </application>
+
+</manifest>

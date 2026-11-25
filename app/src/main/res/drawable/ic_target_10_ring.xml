@@ -1,0 +1,72 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- 1 (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -50, 0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0"/>
+
+    <!-- 2 (White) -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -45, 0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0"/>
+
+    <!-- 3 (Black) -->
+    <path
+        android:fillColor="#000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -40, 0 a 40,40 0 1,0 80,0 a 40,40 0 1,0 -80,0"/>
+
+    <!-- 4 (Black) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -35, 0 a 35,35 0 1,0 70,0 a 35,35 0 1,0 -70,0"/>
+
+    <!-- 5 (Blue) -->
+    <path
+        android:fillColor="#00B4FF"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -30, 0 a 30,30 0 1,0 60,0 a 30,30 0 1,0 -60,0"/>
+
+    <!-- 6 (Blue) -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -25, 0 a 25,25 0 1,0 50,0 a 25,25 0 1,0 -50,0"/>
+
+    <!-- 7 (Red) -->
+    <path
+        android:fillColor="#FF0000"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -20, 0 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"/>
+
+    <!-- 8 (Red) -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -15, 0 a 15,15 0 1,0 30,0 a 15,15 0 1,0 -30,0"/>
+
+    <!-- 9 (Yellow) -->
+    <path
+        android:fillColor="#FFE500"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -10, 0 a 10,10 0 1,0 20,0 a 10,10 0 1,0 -20,0"/>
+
+    <!-- 10 (Yellow) -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="0.5"
+        android:pathData="M 50, 50 m -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0"/>
+        
+</vector>

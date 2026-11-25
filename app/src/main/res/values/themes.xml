@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.YOLOv8TfLite" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/menu_bg</item>
+        <item name="android:navigationBarColor">@color/menu_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.YOLOv8TfLite" parent="Base.Theme.YOLOv8TfLite" />
+    
+    <style name="CircleBottomShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">100dp</item>
+        <item name="cornerSizeBottomRight">100dp</item>
+    </style>
+</resources>

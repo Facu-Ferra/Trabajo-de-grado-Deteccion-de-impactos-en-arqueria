@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_heatmap_radial"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_match_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS ROBIN"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_arrow_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Arrow 1 of 3"
+        android:textColor="@color/text_sub"
+        android:textSize="16sp" />
+
+    <!-- Timer / Bot Avatar Container -->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!-- Timer Circle (Background) -->
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_icon_circle">
+            
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="30"
+                android:textColor="#FFFFFF"
+                android:textSize="64sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+        
+        <!-- Bot Avatar Popping Out -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_bot_match"
+            android:layout_width="200dp"
+            android:layout_height="240dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="gone"
+            app:shapeAppearanceOverlay="@style/CircleBottomShape" />
+            
+    </RelativeLayout>
+
+    <!-- Turn Indicator -->
+    <TextView
+        android:id="@+id/tv_turn_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="YOUR TURN"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Shoot your arrow!"
+        android:textColor="@color/text_sub"
+        android:textSize="14sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Scores Preview (Bottom) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <!-- User side -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOU"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+                
+            <LinearLayout
+                android:id="@+id/layout_user_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <!-- Bot side -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            
+            <TextView
+                android:id="@+id/tv_bot_name_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROBIN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+                
+            <LinearLayout
+                android:id="@+id/layout_bot_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next_action"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Start Match"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#5C24FF" />
+
+</LinearLayout>
